@@ -1,0 +1,70 @@
+\ProvidesPackage{sheaf-style}[2019/02/07 Sheafs]
+
+\usepackage{cite}
+\usepackage{mathrsfs}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb, graphicx, multicol, array}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{pdfpages}
+\usepackage{url}
+\usepackage[arrow]{xy}
+\usepackage{nicefrac}
+
+\graphicspath{{./}{figs/}}
+
+%\newtheorem{lemma}[theorem]{Lemma}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\rfeq}[1]{Eq.~\ref{#1}}
+\newcommand{\rfdef}[1]{Def.~\ref{#1}}
+
+% specific to this paper
+\newcommand{\str}[1]{\text{star}(#1)}
+\newcommand{\sh}[1]{\mathscr{S}(#1)}
+\newcommand{\sheaf}{\mathscr{S}}
+\newcommand{\domain}{\mathscr{C}}
+\newcommand{\codomain}{S}
+\newcommand{\eqs}[1]{E({#1})}
+\newcommand{\vrs}[1]{V({#1})}
+% consistency structure
+\newcommand{\cstr}{\mathcal{X}}
+% consistency function
+\newcommand{\cfn}{\mathcal{X}}
+
+% --- for notes to each other:
+\usepackage{color, xcolor}
+\newcommand{\anna}[1]{{\color{magenta}[[\textbf{Anna says: }{#1}]]}}
+\newcommand{\brittany}[1]{{\color{purple}[[\textbf{Brittany says: }#1]]}}
+\newcommand{\daniel}[1]{{\color{blue}[[\textbf{Daniel says: }#1]]}}
+\newcommand{\ryan}[1]{{\color{green}[[\textbf{Ryan says: }{#1}]]}}
+\newcommand{\todo}[1]{{\color{red}[[\textbf{TODO: }{#1}]]}}
+\newcommand{\figref}[1]{Figure~\ref{fig:#1}}
+
+% ... for theorems
+\usepackage{amsmath,amssymb,amsthm}
+\theoremstyle{plain}
+\newtheorem{prob}{Problem}
+\newtheorem{introtheorem}{Theorem}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{openq}[theorem]{Open Question}
+
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{assumption}[theorem]{Assumption}
+
+\theoremstyle{remark}
+\newtheorem{remark}[section]{Remarks}
+\newtheorem{discussion}[theorem]{Discussion}
+
+
